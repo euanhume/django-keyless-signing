@@ -48,4 +48,4 @@ jobs:
       - name: Sign the container image
         run: >-
           cosign sign ghcr.io/${{ github.repository }}@${{
-          steps.push-step.outputs.digest }}
+          steps.push-step.outputs.digest }} --yes
